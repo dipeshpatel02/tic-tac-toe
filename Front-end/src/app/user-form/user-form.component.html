@@ -1,0 +1,19 @@
+<!-- user-form.component.html -->
+<app-nav-bar></app-nav-bar>
+<div class="form-container">
+    <form (ngSubmit)="onSubmit()" #userForm="ngForm">
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" [(ngModel)]="user.email" name="email" required>
+            <div *ngIf="userForm.submitted && !user.email" class="error-message">Email is required.</div>
+        </div>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" [(ngModel)]="user.name" name="name" required>
+            <div *ngIf="userForm.submitted && !user.name" class="error-message">Name is required.</div>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Save">
+        </div>
+    </form>
+</div>

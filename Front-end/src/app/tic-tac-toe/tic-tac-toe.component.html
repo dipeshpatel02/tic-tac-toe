@@ -1,0 +1,17 @@
+<app-nav-bar></app-nav-bar>
+<div class="container">
+    <div>
+        you win - {{wins}}
+    </div>
+    <div class="board">
+        <div *ngFor="let cell of board; let i = index" class="cell" (click)="makeMove(i)">
+            {{ cell }}
+        </div>
+    </div>
+    <div *ngIf="winner" class="status">
+        <p *ngIf="winner === 'Tie'">It's a tie!</p>
+        <p *ngIf="winner !== 'Tie'">{{ winner }} wins!</p>
+    </div>
+    <br>
+    <button class="reset-button" (click)="resetGame()">Reset Game</button>
+</div>

@@ -1,0 +1,10 @@
+/Back-end/.vs/ProjectEvaluation/*.bin
+/Back-end/tictactoe/bin/Debug/net8.0/runtimes/maccatalyst-arm64/native/*.dylib
+*.dll
+/Back-end/tictactoe/bin/Debug/net8.0/runtimes/browser-wasm/nativeassets/net8.0
+native
+net8.0
+/Back-end/tictactoe/obj/*.cache
+/Back-end/tictactoe/obj/*.targets
+/Back-end/tictactoe/obj/*.json
+/Back-end/tictactoe/obj/*.props

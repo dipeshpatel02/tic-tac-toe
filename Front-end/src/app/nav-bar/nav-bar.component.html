@@ -1,0 +1,6 @@
+<nav>
+    <a routerLink="/user" routerLinkActive="active" *ngIf="!isLogin">User Form</a>
+    <a routerLink="/game" routerLinkActive="active" *ngIf="isLogin">Play Game</a>
+    <a routerLink="/winners" routerLinkActive="active">Top Winners</a>
+    <a (click)="logOut()" style="cursor: pointer;" routerLinkActive="active" *ngIf="isLogin">Log Out</a>
+</nav>

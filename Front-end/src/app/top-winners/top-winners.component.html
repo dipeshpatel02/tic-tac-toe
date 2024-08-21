@@ -1,0 +1,24 @@
+<!-- top-winners.component.html -->
+<app-nav-bar></app-nav-bar>
+<div class="container">
+    <h1>Top Winners</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Email</th>
+                <th>Name</th>
+                <th>Wins</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngIf="topWinners.length === 0">
+                <td colspan="3" class="no-data">No data available</td>
+            </tr>
+            <tr *ngFor="let winner of topWinners">
+                <td>{{ winner.email }}</td>
+                <td>{{ winner.name }}</td>
+                <td>{{ winner.wins }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
