@@ -17,4 +17,4 @@ npm install -g @angular/cli
 After colne open cmd at Front-end path
 ```bash
 npm i
-ng s -0
+ng s -o
