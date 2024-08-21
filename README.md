@@ -18,3 +18,22 @@ After colne open cmd at Front-end path
 ```bash
 npm i
 ng s -o
+```
+## Assumptions and Design Decisions
+
+### User Authentication and Account Creation
+
+As per the project requirements, complex authentication mechanisms were not implemented. The following assumptions and design decisions were made:
+
+1. **Simple User Identification**:
+   - Users are identified by their email address and name combination. 
+   - If a user enters an email address and name for the first time, a new account is created.
+
+2. **Multiple Accounts for the Same Email**:
+   - If a user enters the same email address but a different name on subsequent logins, a new account will be created for each unique name.
+   - This allows users to create multiple accounts with the same email address but different names.
+
+3. **No Passwords or Authentication Tokens**:
+   - Since the focus was not on complex authentication, no passwords or authentication tokens are required to log in or create an account.
+   - The system assumes that the combination of email and name is sufficient for user identification in this context.
+
