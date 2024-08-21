@@ -16,6 +16,7 @@ export class UserFormComponent implements OnInit {
   constructor(private router: Router, private http: HttpClient, private service: ApiService) { }
 
   ngOnInit(): void {
+    //if user is already logedIn no need to come agin and filled this form
     var user = localStorage.getItem('user');
     if (user != null) {
       this.router.navigate(['/game']);

@@ -26,6 +26,7 @@ export class TicTacToeComponent implements OnInit {
   constructor(private http: HttpClient, private service: ApiService, private router: Router) { }
 
   ngOnInit(): void {
+    //check user is logedin or not
     const userString = localStorage.getItem('user');
     if (userString) {
       try {

@@ -8,7 +8,8 @@ const routes: Routes = [
   { path: '', redirectTo: '/user', pathMatch: 'full' },
   { path: 'user', component: UserFormComponent },
   { path: 'game', component: TicTacToeComponent },
-  { path: 'winners', component: TopWinnersComponent }
+  { path: 'winners', component: TopWinnersComponent },
+  { path: "**", redirectTo: "/user" }
 ];
 
 @NgModule({
